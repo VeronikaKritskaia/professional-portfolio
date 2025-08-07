@@ -16,26 +16,28 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="2023 - present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Data Scientist</h3>
+            <h4 className="vertical-timeline-element-subtitle">Decathlon, NL</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Led the end-to-end development and deployment of AI solutions, 
+              collaborating with experts, mentoring juniors, and replacing manual processes with scalable, efficient systems.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="2022 - 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Junior Data Scientist</h3>
+            <h4 className="vertical-timeline-element-subtitle">Productsup, NL</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Developed and deployed an AI-powered solution combining OCR, computer vision, and LLMs.
+
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -44,22 +46,25 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Research Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Tilburg University, NL</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+              Conducted research on episodic memory updating by analyzing eye-tracking data. 
+              Contributed to a co-authored paper ”Effect of stimuli congruency on gaze behavior and memory”.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
+            date="2017 - 2017"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Student Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Allianz Global Corporate & Specialty</h4>
+            <h4 className="vertical-timeline-element-subtitle">Munich, DE</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Analyzed consulting vendor data and created visualizations, 
+              while gaining insights into the insurance value chain and presenting key steps.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

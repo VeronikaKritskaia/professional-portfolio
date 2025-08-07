@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
-import photo from '../assets/images/profile_photo.jpeg';
+import photo from '../assets/images/my_photo.png';
 
 function Main() {
 
