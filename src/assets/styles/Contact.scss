@@ -1,48 +1,110 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+// SCSS Variables
+$primary-text-color: white;
+$secondary-text-color: white;
+$icon-color: white;
+$button-text-color: #212121; 
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%; // Matches .projects-container padding
+    text-align: left;
+    color: $primary-text-color;
+
+    .contact-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 500;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // Two equal columns
+        grid-gap: 50px; // Same gap as projects
+        align-items: start; // Aligns grid items to the top
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+
+        .contact-message {
+            color: $secondary-text-color;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .MuiButton-outlined {
+            // 1. Make the button shorter by fitting its width to the content
+            width: fit-content; 
+
+            // 2. Make the button white with dark text
+            background-color: white;
+            color: $button-text-color;
+            border-color: white;
+
+            // Ensure the icon inside the button also has the correct color
+            .MuiSvgIcon-root {
+                color: $button-text-color;
+            }
+
+            // Optional: Add a subtle hover effect
+            &:hover {
+                background-color: #f0f0f0; // A slightly off-white color on hover
+                border-color: #f0f0f0;
+            }
+        }
+    }
+
+    .contact-right {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            svg { color: $icon-color; }
+
+            a {
+                color: $primary-text-color;
+                text-decoration: none;
+                &:hover { text-decoration: underline; }
+            }
+        }
+
+        .contact-icons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+
+            a {
+                color: $icon-color;
+                transition: color 0.3s ease;
+                &:hover { color: $primary-text-color; }
+                svg { font-size: 2rem; }
+            }
+        }
+    }
 }
 
-.contact-form {
-  padding-top: 20px;
+// Media Queries to match the projects section
+@media screen {
+    @media (max-width: 700px) {
+        .contact-container {
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
 
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
-  }
+        .contact-container .contact-grid {
+            display: block; // Stacks the grid items
+        }
 
-  button:hover {
-    background-color: #5000ca;
-    color: white;
-  }
-
-  fieldset {
-    background-color: white;
-  }
-}
-
-label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
-}
-
-.form-flex {
-  display: flex;
-  gap: 15px;
-  padding-bottom: 15px;
-}
-
-.form-flex .MuiFormControl-root {
-  width: 100%;
-}
-
-form {
-  width: 100% !important;
-}
-
-.body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+        .contact-container .contact-grid .contact-left {
+            // Adds space between the stacked items
+            padding-bottom: 50px;
+        }
+    }
 }
