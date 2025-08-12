@@ -7,7 +7,7 @@ $button-text-color: #212121;
 .contact-container {
     display: flex;
     flex-direction: column;
-    padding: 5% 10%; // Matches .projects-container padding
+    padding: 5% 10%; 
     text-align: left;
     color: $primary-text-color;
 
@@ -20,7 +20,7 @@ $button-text-color: #212121;
     .contact-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr); // Two equal columns
-        grid-gap: 50px; // Same gap as projects
+        grid-gap: 50px; 
         align-items: start; // Aligns grid items to the top
     }
 
@@ -89,7 +89,7 @@ $button-text-color: #212121;
     }
 }
 
-// Media Queries to match the projects section
+
 @media screen {
     @media (max-width: 700px) {
         .contact-container {
