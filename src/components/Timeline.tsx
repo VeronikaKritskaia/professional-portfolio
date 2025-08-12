@@ -42,6 +42,21 @@ function Timeline() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            date="2019 - 2022"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">(B.S.) Tilburg University, NL</h3>
+            <h4 className="vertical-timeline-element-subtitle"></h4>
+            <p>
+              Bachelor of Science: Congitive Science and Artificial Intelligence.
+            </p>
+            <p>
+              Relevant coursework: Machine Learning, AI, Statistics, and Advanced Programming.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             date="2021 - 2021"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
