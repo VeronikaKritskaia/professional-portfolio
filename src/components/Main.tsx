@@ -1,6 +1,4 @@
 // import React from "react";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
 import photo from '../assets/images/my_photo.png';
 
@@ -13,16 +11,20 @@ function Main() {
           <img src={photo} alt="Avatar" />
         </div>
         <div className="content">
-          <div className="social_icons">
-            <a href="https://github.com/VeronikaKritskaia" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-          </div>
-          <h1>Veronika Kritskaia</h1>
           <p>Data Scientist</p>
-
-          <div className="mobile_social_icons">
-            <a href="https://github.com/VeronikaKritskaia" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+          <h1>Veronika Kritskaia</h1>
+          <div className="hero-buttons">
+            <a 
+              href="/Veronika_CV.pdf" 
+              className="btn btn-primary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
+            <a href="#contact" className="btn btn-secondary">
+              Contact
+            </a>
           </div>
         </div>
       </div>

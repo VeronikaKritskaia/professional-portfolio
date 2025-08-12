@@ -47,6 +47,48 @@
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+    }
+
+    // General button styling
+    .btn {
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    
+      // Style for the primary "Download CV" button
+      &.btn-primary {
+        background-color: #ffffff;
+        color: #111111; // Dark color for text
+    
+        &:hover {
+          background-color: #dddddd;
+          transform: translateY(-2px);
+        }
+      }
+    
+      // Style for the secondary "Contact" button
+      &.btn-secondary {
+        background-color: transparent;
+        color: #ffffff;
+        border-color: #ffffff;
+    
+        &:hover {
+          background-color: #ffffff;
+          color: #111111; // Dark color for text
+          transform: translateY(-2px);
+        }
+      }
+    }
 }
 
 .about-section .image-wrapper {
@@ -145,6 +187,12 @@
             padding-left: 5%;
             padding-right: 5%;
             padding-bottom: 5%;
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
         }
 
         .about-section .image-wrapper {
