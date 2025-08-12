@@ -1,110 +1,108 @@
-// SCSS Variables
-$primary-text-color: white;
-$secondary-text-color: white;
-$icon-color: white;
-$button-text-color: #212121; 
-
+// The main container for the Contact section
 .contact-container {
+    // padding: 80px 15%;
     display: flex;
     flex-direction: column;
-    padding: 5% 10%; 
+    padding: 2% 17%; 
     text-align: left;
-    color: $primary-text-color;
-
-    .contact-title {
+    // --- LIGHT MODE VARIABLES ---
+    --contact-bg: #ffffff;
+    --contact-title-color: #111111;
+    --contact-text-color: #111111;
+    --contact-icon-color: #111111;
+    --contact-button-border: rgba(0, 0, 0, 0.5);
+    --contact-button-text: #111111;
+    --contact-button-hover-bg: rgba(0, 0, 0, 0.04);
+    
+    h1 {
         text-align: center;
+    }
+}
+
+// --- DARK MODE OVERRIDES ---
+// When the body has the .dark-mode class, these variables will be used instead.
+.dark-mode .contact-container {
+    --contact-bg: #1a1a1d;
+    --contact-title-color: #ffffff;
+    --contact-text-color: #cccccc;
+    --contact-icon-color: #ffffff;
+    --contact-button-border: rgba(255, 255, 255, 0.5);
+    --contact-button-text: #ffffff;
+    --contact-button-hover-bg: rgba(255, 255, 255, 0.08);
+}
+
+
+// Grid layout for the contact info
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+}
+
+// Styling for the left side (message and button)
+.contact-left {
+    .contact-message {
+        // Apply the text color variable
+        color: var(--contact-text-color);
+        font-size: 1.12rem;
+        line-height: 1.6;
         margin-bottom: 3rem;
-        font-weight: 500;
     }
 
-    .contact-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); // Two equal columns
-        grid-gap: 50px; 
-        align-items: start; // Aligns grid items to the top
-    }
+    // Styling for the Material-UI Button
+    // We target the generated MUI classes to override them.
+    .MuiButton-outlined {
+        border-color: var(--contact-button-border) !important;
+        color: var(--contact-button-text) !important;
+        font-weight: 600 !important;
 
-    .contact-left {
-        display: flex;
-        flex-direction: column;
-
-        .contact-message {
-            color: $secondary-text-color;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-        }
-        .MuiButton-outlined {
-            // 1. Make the button shorter by fitting its width to the content
-            width: fit-content; 
-
-            // 2. Make the button white with dark text
-            background-color: white;
-            color: $button-text-color;
-            border-color: white;
-
-            // Ensure the icon inside the button also has the correct color
-            .MuiSvgIcon-root {
-                color: $button-text-color;
-            }
-
-            // Optional: Add a subtle hover effect
-            &:hover {
-                background-color: #f0f0f0; // A slightly off-white color on hover
-                border-color: #f0f0f0;
-            }
-        }
-    }
-
-    .contact-right {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-
-            svg { color: $icon-color; }
-
-            a {
-                color: $primary-text-color;
-                text-decoration: none;
-                &:hover { text-decoration: underline; }
-            }
-        }
-
-        .contact-icons {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 1rem;
-
-            a {
-                color: $icon-color;
-                transition: color 0.3s ease;
-                &:hover { color: $primary-text-color; }
-                svg { font-size: 2rem; }
-            }
+        &:hover {
+            background-color: var(--contact-button-hover-bg) !important;
         }
     }
 }
 
 
-@media screen {
-    @media (max-width: 700px) {
-        .contact-container {
-            display: block;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
+// Styling for the right side (contact details)
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
-        .contact-container .contact-grid {
-            display: block; // Stacks the grid items
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    // Apply the text color variable
+    color: var(--contact-text-color);
+    
+    // Apply the icon color variable
+    .MuiSvgIcon-root {
+        color: var(--contact-icon-color);
+        font-size: 2rem;
+    }
+    
+    a {
+        text-decoration: none;
+        // Apply the link color variable
+        color: var(--contact-link-color);
+        &:hover {
+            text-decoration: underline;
         }
+    }
+}
 
-        .contact-container .contact-grid .contact-left {
-            // Adds space between the stacked items
-            padding-bottom: 50px;
-        }
+// --- RESPONSIVE ADJUSTMENTS ---
+@media screen and (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container h1 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
     }
 }

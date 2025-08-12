@@ -1,5 +1,12 @@
-.dark-mode .about-section {
-    background-color: rgba(0, 0, 0, 0.2);
+.light-mode .about-section .content {
+    // --- Light Mode Variable Overrides ---
+    // When .light-mode is active, buttons will be black with white text.
+    --btn-primary-bg: #111111;
+    --btn-primary-text: #ffffff;
+    --btn-secondary-border: #111111;
+    --btn-secondary-text: #111111;
+    --btn-secondary-hover-bg: #111111;
+    --btn-secondary-hover-text: #ffffff;
 }
 
 .about-section {
@@ -20,6 +27,13 @@
 .about-section .content {
     text-align: left;
     z-index: 2;
+
+    --btn-primary-bg: #ffffff;
+    --btn-primary-text: #111111;
+    --btn-secondary-border: #ffffff;
+    --btn-secondary-text: #ffffff;
+    --btn-secondary-hover-bg: #ffffff;
+    --btn-secondary-hover-text: #111111;
 
     .social_icons {
         display: flex;
@@ -67,11 +81,11 @@
     
       // Style for the primary "Download CV" button
       &.btn-primary {
-        background-color: #ffffff;
-        color: #111111; // Dark color for text
+        background-color: var(--btn-primary-bg);
+        color: var(--btn-primary-text);
     
         &:hover {
-          background-color: #dddddd;
+          opacity: 0.85;
           transform: translateY(-2px);
         }
       }
@@ -79,12 +93,12 @@
       // Style for the secondary "Contact" button
       &.btn-secondary {
         background-color: transparent;
-        color: #ffffff;
-        border-color: #ffffff;
+        color: var(--btn-secondary-text);
+        border-color: var(--btn-secondary-border);
     
         &:hover {
-          background-color: #ffffff;
-          color: #111111; // Dark color for text
+          background-color: var(--btn-secondary-hover-bg);
+          color: var(--btn-secondary-hover-text);
           transform: translateY(-2px);
         }
       }

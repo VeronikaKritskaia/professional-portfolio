@@ -15,7 +15,7 @@ function Main() {
           <h1>Veronika Kritskaia</h1>
           <div className="hero-buttons">
             <a 
-              href="/Veronika_CV.pdf" 
+              href="/Veronika_Resume.pdf" 
               className="btn btn-primary" 
               target="_blank" 
               rel="noopener noreferrer"

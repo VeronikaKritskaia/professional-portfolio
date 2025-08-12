@@ -15,17 +15,16 @@ function Contact() {
 
         <div className="contact-left">
            <Typography variant="body1" className="contact-message">
-             I’m always open to new opportunities, collaborations, or simply having a conversation.
-             Feel free to reach out or check out my resume.
+            <p> I’m always open to new opportunities, collaborations, or simply having a conversation.
+             Feel free to reach out or check out my resume.</p>
            </Typography>
            <Button
              variant="outlined"
              startIcon={<DescriptionIcon />}
-             href="/resume.pdf"
+             href="/Veronika_Resume.pdf"
              target="_blank"
             rel="noopener noreferrer"
-           >
-             Download CV
+           >Download CV
           </Button>
          </div>
 
