@@ -3,11 +3,11 @@ import {
   Main,
   Timeline,
   Expertise,
-  Project,
   Contact,
   Navigation,
   Footer,
 } from "./components";
+import Publication from "./components/Publication";
 import FadeIn from './components/FadeIn';
 import './index.scss';
 
@@ -33,10 +33,10 @@ function App() {
             <Main/>
             <Expertise/>
             <Timeline/>
-            <Project/>
+            <Publication/>
             <Contact/>
         </FadeIn>
-        <Footer />
+        <Footer/>
     </div>
     );
 }

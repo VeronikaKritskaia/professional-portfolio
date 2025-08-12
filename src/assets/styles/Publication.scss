@@ -1,21 +1,21 @@
-.projects-container {
+.pubs-container {
     display: flex;
     flex-direction: column;
     padding: 5% 10%;
     text-align: left;
 }
   
-.projects-container .projects-grid {
+.pubs-container .pubs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
   
-.projects-container .projects-grid .project {
+.pubs-container .pubs-grid .project {
     text-align: left;
 }
   
-.project h2:hover {
+.pubs h2:hover {
     text-decoration: underline;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
@@ -32,17 +32,17 @@
 
 @media screen {
     @media (max-width: 700px) {
-        .projects-container {
+        .pubs-container {
             display: block;
             padding-left: 5%;
             padding-right: 5%;
         }
   
-        .projects-container .projects-grid {
+        .pubs-container .pubs-grid {
             display: block;
         }
       
-        .projects-container .projects-grid .project {
+        .pubs-container .pubs-grid .project {
             padding-bottom: 5%;
         }
     }
