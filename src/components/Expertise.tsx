@@ -11,15 +11,16 @@ const labelsFirst = [
     "Computer Vision",
     "MLflow",
     "API development",
+    "pytest"
 ];
 
 const labelsSecond = [
     "Git",
+    "uv",
     "Python",
     "SQL",
     "R",
     "Tableau",
-    "Qlik",
     "Matplotlib",
     "Seaborn",
     "Streamlit",
@@ -27,10 +28,11 @@ const labelsSecond = [
 
 const labelsThird = [
     "GCP",
-    "AWS",
+    "AWS (s3, EC2)",
     "Databricks",
     "Docker",
     "MLflow",
+    "FastAPI",
 ];
 
 function Expertise() {

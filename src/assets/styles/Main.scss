@@ -7,6 +7,12 @@
     --btn-secondary-text: #111111;
     --btn-secondary-hover-bg: #111111;
     --btn-secondary-hover-text: #ffffff;
+    --icon-color: #111111;
+    --accent-color: #3498db; // A nice blue for hover
+
+    // Inside .dark-mode .about-section .content (for dark mode)
+    --icon-color: black;
+    --accent-color: #9444ff;
 }
 
 .about-section {
@@ -35,19 +41,35 @@
     --btn-secondary-hover-bg: #ffffff;
     --btn-secondary-hover-text: #111111;
 
-    .social_icons {
+    .hero-action-area {
+        margin-top: 2.5rem;
+    }
+    
+    // Container for the social icons
+    .social-links {
         display: flex;
-        flex-direction: row;
-        gap: 10px;
-        color: white;
-
-        svg {
-            font-size: 1.8em;
-        }
+        gap: 1.5rem; // Space between icons
+        margin-top: 1.5rem; // Space below the CV button
     }
 
-    .mobile_social_icons {
-        display: none;
+    // Styling for each icon link
+    .social-icon {
+        // Use a CSS variable to make the color theme-aware
+        color: var(--icon-color, var(--btn-secondary-text)); 
+        
+        // Target the SVG icon itself
+        .MuiSvgIcon-root {
+            font-size: 2.2rem; // Adjust size as needed
+            transition: all 0.3s ease;
+        }
+
+        // Hover effect
+        &:hover {
+            color: var(--accent-color, #3498db); // Use an accent color on hover
+            .MuiSvgIcon-root {
+                transform: scale(1.1);
+            }
+        }
     }
 
     p {
@@ -207,6 +229,9 @@
                 align-items: flex-start;
                 gap: 1rem;
             }
+            .social-links {
+            justify-content: flex-start;
+        }
         }
 
         .about-section .image-wrapper {
