@@ -1,0 +1,140 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5% 10%;
+    // Define variables for light mode by default
+    --projects-card-bg: #ffffff;
+    --projects-title-color: #111111;
+    --projects-text-color: #333333;
+    --projects-bubble-bg: #e0e2e5;
+    --projects-bubble-text: #34495e;
+    --projects-button-color: #007bff;
+
+}
+
+
+// Override variables for dark mode
+.dark-mode .projects-container {
+    --projects-card-bg: #2c2c34;
+    --projects-title-color: #ffffff;
+    --projects-text-color: #cccccc;
+    --projects-bubble-bg: #3a3a44;
+    --projects-bubble-text: #e0e0e0;
+    --projects-button-color: #3498db;
+}
+
+.projects-container .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: start;
+
+}
+
+
+.project-card {
+    background-color: var(--projects-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    display: flex; // Use flexbox to help footer alignment
+    // flex-direction: column; // Stack content vertically
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; // Allows the footer to stick to the bottom
+}
+
+.project-title {
+    font-size: 1.6rem;
+    color: var(--projects-title-color);
+    margin: 0 0 1rem 0;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: var(--projects-text-color);
+    line-height: 1.6;
+    flex-grow: 1; // Pushes the footer down
+}
+
+.project-details {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--projects-button-color);
+    color: var(--projects-text-color);
+    
+    ul {
+        padding-left: 1.2rem;
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+    }
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem; // Increased margin for better spacing
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-bubble {
+    background-color: var(--projects-bubble-bg);
+    color: var(--projects-bubble-text);
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: var(--projects-button-color);
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .projects-grid {
+        // Switch to a single column on tablets and smaller screens
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        padding: 10% 5%;
+    }
+
+    .project-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

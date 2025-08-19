@@ -8,6 +8,7 @@ import {
   Footer,
 } from "./components";
 import Publication from "./components/Publication";
+import Projects from "./components/Projects";
 import AboutMe from "./components/AboutMe";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -34,6 +35,7 @@ function App() {
             <Main/>
             <AboutMe/>
             <Expertise/>
+            <Projects/>
             <Timeline/>
             <Publication/>
             <Contact/>
