@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VeronikaKritskaia/VKritskaia.github.io/static/css/main.95253951.css",
-    "main.js": "/VeronikaKritskaia/VKritskaia.github.io/static/js/main.dfa10951.js",
+    "main.js": "/VeronikaKritskaia/VKritskaia.github.io/static/js/main.3f5713e2.js",
     "static/js/453.b05d8aa5.chunk.js": "/VeronikaKritskaia/VKritskaia.github.io/static/js/453.b05d8aa5.chunk.js",
     "static/media/my_photo.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/my_photo.a8ac4d9461cdcfedb719.png",
     "static/media/congruency.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/congruency.b839cbbc42c1cf214ee4.png",
@@ -10,11 +10,11 @@
     "static/media/bg-dark.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/bg-dark.f420c6b8458af72de935.png",
     "index.html": "/VeronikaKritskaia/VKritskaia.github.io/index.html",
     "main.95253951.css.map": "/VeronikaKritskaia/VKritskaia.github.io/static/css/main.95253951.css.map",
-    "main.dfa10951.js.map": "/VeronikaKritskaia/VKritskaia.github.io/static/js/main.dfa10951.js.map",
+    "main.3f5713e2.js.map": "/VeronikaKritskaia/VKritskaia.github.io/static/js/main.3f5713e2.js.map",
     "453.b05d8aa5.chunk.js.map": "/VeronikaKritskaia/VKritskaia.github.io/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95253951.css",
-    "static/js/main.dfa10951.js"
+    "static/js/main.3f5713e2.js"
   ]
 }
