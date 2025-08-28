@@ -47,7 +47,6 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">(B.S.) Tilburg University, NL</h3>
-            <h4 className="vertical-timeline-element-subtitle"></h4>
             <p>
               Bachelor of Science: Congitive Science and Artificial Intelligence.
             </p>
