@@ -10,9 +10,9 @@
     --contact-title-color: #111111;
     --contact-text-color: #111111;
     --contact-icon-color: #111111;
-    --contact-button-border: rgba(0, 0, 0, 0.5);
-    --contact-button-text: #111111;
-    --contact-button-hover-bg: rgba(0, 0, 0, 0.04);
+    --new-button-bg: #000000; // Black background for button in light mode
+    --new-button-text: #ffffff; // White text for button in light mode
+    --new-button-hover-bg: #333333; // Darker gray on hover in light mode
     
     h1 {
         text-align: center;
@@ -26,9 +26,9 @@
     --contact-title-color: #ffffff;
     --contact-text-color: #cccccc;
     --contact-icon-color: #ffffff;
-    --contact-button-border: rgba(255, 255, 255, 0.5);
-    --contact-button-text: #ffffff;
-    --contact-button-hover-bg: rgba(255, 255, 255, 0.08);
+    --new-button-bg: #ffffff; // White background for button in dark mode
+    --new-button-text: #000000; // Black text for button in dark mode
+    --new-button-hover-bg: #cccccc; // Lighter gray on hover in dark mode
 }
 
 
@@ -52,13 +52,18 @@
 
     // Styling for the Material-UI Button
     // We target the generated MUI classes to override them.
-    .MuiButton-outlined {
-        border-color: var(--contact-button-border) !important;
-        color: var(--contact-button-text) !important;
+    .MuiButton-outlined { // Assuming you are still using MuiButton-outlined as the base
+        background-color: var(--new-button-bg) !important;
+        color: var(--new-button-text) !important;
+        border-radius: 12px !important; // Rounded corners
+        padding: 12px 30px !important; // Adjust padding to match the image
+        font-size: 1rem !important; // Adjust font size as needed
         font-weight: 600 !important;
+        text-transform: none !important; // Prevent all caps if MUI default is that
+        border: none !important; // Remove the border as per the image
 
         &:hover {
-            background-color: var(--contact-button-hover-bg) !important;
+            background-color: var(--new-button-hover-bg) !important;
         }
     }
 }

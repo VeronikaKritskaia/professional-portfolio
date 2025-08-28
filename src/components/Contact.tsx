@@ -20,11 +20,10 @@ function Contact() {
            </Typography>
            <Button
              variant="outlined"
-             startIcon={<DescriptionIcon />}
              href="/Veronika_Resume.pdf"
              target="_blank"
-            rel="noopener noreferrer"
-           >Download CV
+            rel="noopener noreferrer">
+            Download CV
           </Button>
          </div>
 
