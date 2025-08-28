@@ -1,15 +1,118 @@
+// --- FOOTER STYLING ---
 footer {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    // Re-using our color variables, but might adjust for the new look
+    --footer-bg-light: #eeeeee; // Lighter, slightly warmer background as in the image
+    // --footer-bg-dark: #2c2c2e; // A good contrasting dark mode background
+    --footer-border-light: rgba(0, 0, 0, 0.1);
+    --footer-border-dark: rgba(255, 255, 255, 0.1);
+    --footer-primary-text-light: #1a1a1a; // Darker text for titles
+    --footer-primary-text-dark: #ffffff;
+    --footer-secondary-text-light: #5a5a5a; // Lighter text for content
+    --footer-secondary-text-dark: #cccccc;
 
-    svg {
-        width: 1.1em !important;
-        height: 1.1em !important;
-        margin-right: 10px;
+    padding: 30px 8%; // Slightly less padding for a compact look
+    border-top: 1px solid var(--footer-border-light);
+    background-color: var(--footer-bg-light);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-family: 'Arial', sans-serif; // Using a generic font as suggested by the image
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around; // Distributes space evenly
+        align-items: flex-start; // Align columns to the top
+        width: 100%;
+        max-width: 900px; // A narrower max-width to bring columns closer
+        margin: 0 auto;
+        gap: 20px; // Add some gap between columns
     }
 
-    p {
-        font-size: 0.8em;
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        flex: 1; // Allows columns to grow and shrink
+        min-width: 80px; // Minimum width before wrapping
+        text-align: center; // Align text left within columns
+    }
+
+    .column-title {
+        font-size: 0.7rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: var(--footer-primary-text-light);
+        text-transform: uppercase; // All caps for titles
+        letter-spacing: 0.05em;
+    }
+
+    .column-text {
+        font-size: 0.9rem;
+        color: var(--footer-secondary-text-light);
+        text-decoration: none; // Remove underline for links by default
+        line-height: 1.5;
+
+        &:hover {
+            color: var(--footer-primary-text-light);
+            text-decoration: underline; // Add underline on hover for links
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px; // Space between icons
+        a {
+            color: var(--footer-secondary-text-light);
+            transition: color 0.2s ease;
+            &:hover {
+                color: var(--footer-primary-text-light);
+            }
+            .MuiSvgIcon-root {
+                font-size: 1.3rem; // Slightly smaller icons
+            }
+        }
+    }
+}
+
+// --- DARK MODE OVERRIDES ---
+.dark-mode footer {
+    border-top-color: var(--footer-border-dark);
+    background-color: var(--footer-bg-dark);
+
+    .column-title { color: var(--footer-primary-text-dark); }
+    .column-text {
+        color: var(--footer-secondary-text-dark);
+        &:hover { color: var(--footer-primary-text-dark); }
+    }
+    .social-icons a {
+        color: var(--footer-secondary-text-dark);
+        &:hover { color: var(--footer-primary-text-dark); }
+    }
+}
+
+// --- RESPONSIVE ADJUSTMENTS ---
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 30px 4%; // More padding on smaller screens
+        .footer-content {
+            flex-direction: column;
+            align-items: flex-start; // Align columns to left on mobile
+            gap: 2rem; // More vertical space between stacked columns
+        }
+        .footer-column {
+            width: 100%; // Each column takes full width
+            min-width: unset; // Remove min-width constraint
+        }
+        .social-icons {
+            justify-content: flex-start; // Align social icons to the left
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    footer {
+        .footer-content {
+            justify-content: space-between; // Space out columns more on medium screens
+            gap: 15px; // Adjust gap for medium screens
+            max-width: 700px; // Slightly tighter on medium screens
+        }
     }
 }

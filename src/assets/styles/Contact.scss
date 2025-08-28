@@ -1,113 +1,69 @@
 // The main container for the Contact section
 .contact-container {
-    // padding: 80px 15%;
     display: flex;
     flex-direction: column;
-    padding: 2% 17%; 
-    text-align: left;
+    align-items: center; // Horizontally center all items
+    padding: 6% 17%;     // Added more vertical padding for better spacing
+    text-align: center;  // Center the text within all child elements
+
     // --- LIGHT MODE VARIABLES ---
     --contact-bg: #ffffff;
     --contact-title-color: #111111;
     --contact-text-color: #111111;
-    --contact-icon-color: #111111;
-    --new-button-bg: #000000; // Black background for button in light mode
-    --new-button-text: #ffffff; // White text for button in light mode
-    --new-button-hover-bg: #333333; // Darker gray on hover in light mode
+    --new-button-bg: #000000;
+    --new-button-text: #ffffff;
+    --new-button-hover-bg: #333333;
     
     h1 {
-        text-align: left;
+        // text-align: center; is now inherited from the parent
+        margin-bottom: 1.5rem;
     }
 }
 
 // --- DARK MODE OVERRIDES ---
-// When the body has the .dark-mode class, these variables will be used instead.
 .dark-mode .contact-container {
     --contact-bg: #1a1a1d;
     --contact-title-color: #ffffff;
     --contact-text-color: #cccccc;
-    --contact-icon-color: #ffffff;
-    --new-button-bg: #ffffff; // White background for button in dark mode
-    --new-button-text: #000000; // Black text for button in dark mode
-    --new-button-hover-bg: #cccccc; // Lighter gray on hover in dark mode
+    --new-button-bg: #ffffff;
+    --new-button-text: #000000;
+    --new-button-hover-bg: #cccccc;
 }
 
-
-// Grid layout for the contact info
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    align-items: center;
-}
-
-// Styling for the left side (message and button)
-.contact-left {
-    .contact-message {
-        // Apply the text color variable
-        color: var(--contact-text-color);
-        font-size: 1.12rem;
-        line-height: 1.6;
-        margin-bottom: 3rem;
-    }
-
-    // Styling for the Material-UI Button
-    // We target the generated MUI classes to override them.
-    .MuiButton-outlined { // Assuming you are still using MuiButton-outlined as the base
-        background-color: var(--new-button-bg) !important;
-        color: var(--new-button-text) !important;
-        border-radius: 12px !important; // Rounded corners
-        padding: 12px 30px !important; // Adjust padding to match the image
-        font-size: 1rem !important; // Adjust font size as needed
-        font-weight: 600 !important;
-        text-transform: none !important; // Prevent all caps if MUI default is that
-        border: none !important; // Remove the border as per the image
-
-        &:hover {
-            background-color: var(--new-button-hover-bg) !important;
-        }
-    }
-}
-
-
-// Styling for the right side (contact details)
-.contact-right {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.1rem;
-    // Apply the text color variable
+// Styling for the message
+.contact-message {
     color: var(--contact-text-color);
-    
-    // Apply the icon color variable
-    .MuiSvgIcon-root {
-        color: var(--contact-icon-color);
-        font-size: 2rem;
-    }
-    
-    a {
-        text-decoration: none;
-        // Apply the link color variable
-        color: var(--contact-link-color);
-        &:hover {
-            text-decoration: underline;
-        }
+    font-size: 1.12rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    // Constrain the width for better readability on large screens
+    max-width: 55ch; 
+}
+
+// Styling for the Material-UI Button
+// This rule can now be a top-level rule since .contact-left was removed
+.contact-container .MuiButton-outlined { 
+    background-color: var(--new-button-bg) !important;
+    color: var(--new-button-text) !important;
+    border-radius: 12px !important;
+    padding: 12px 30px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    border: none !important;
+
+    &:hover {
+        background-color: var(--new-button-hover-bg) !important;
     }
 }
 
 // --- RESPONSIVE ADJUSTMENTS ---
 @media screen and (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
     .contact-container h1 {
         font-size: 2.2rem;
-        margin-bottom: 3rem;
+    }
+
+    .contact-message {
+        font-size: 1rem;
     }
 }

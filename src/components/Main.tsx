@@ -20,7 +20,7 @@ function Main() {
           {/* The main button is now wrapped for better layout control */}
           <div className="hero-action-area">
             <a 
-              href="/Veronika_Resume.pdf" 
+              href={`${process.env.PUBLIC_URL}/Veronika_Resume.pdf`} 
               className="btn btn-primary" 
               target="_blank" 
               rel="noopener noreferrer"

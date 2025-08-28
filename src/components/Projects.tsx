@@ -25,6 +25,17 @@ const projectsData = [
       'Successfully replaced manual competitive analysis processes, enabling data-driven pricing decisions.'
     ],
     skills: ['NLP', 'LLMs', 'Streamlit', 'Scikit-learn']
+  },
+  {
+    id: 3,
+    title: 'AI-Powered Product Label Automation',
+    description: 'Created an AI-powered pipeline using LLMs and OCR to automate product label analysis.',
+    details: [
+      'Fine-tuned Large Language Models (LLMs) to accurately classify unstructured product text into specific business categories, directly improving the speed and efficiency of the client onboarding workflow.',
+      'Integrated computer vision models to precisely extract labels from images, enhancing the system\'s overall speed and data accuracy.',
+      'Acted as a key technical liaison in a cross-functional team, translating business requirements into model specifications and continuously iterating on AI outputs based on stakeholder feedback.'
+    ],
+    skills: ['NLP', 'Compute Vision', 'LLM', 'OCR']
   }
   // Add more project objects here...
 ];

@@ -14,13 +14,13 @@ import FadeIn from './components/FadeIn';
 import './index.scss';
 
 function App() {
-    const [mode, setMode] = useState<string>('dark');
+    const [mode, setMode] = useState<string>('light');
 
     const handleModeChange = () => {
-        if (mode === 'dark') {
-            setMode('light');
-        } else {
+        if (mode === 'light') {
             setMode('dark');
+        } else {
+            setMode('light');
         }
     }
 
@@ -29,7 +29,7 @@ function App() {
       }, []);
 
     return (
-    <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+    <div className={`main-container ${mode === 'light' ? 'light-mode' : 'dark-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
             <Main/>
