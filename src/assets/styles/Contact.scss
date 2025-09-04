@@ -15,12 +15,12 @@
     --new-button-hover-bg: #333333;
     
     h1 {
-        // text-align: center; is now inherited from the parent
+        // text-align: center; inherited from the parent
         margin-bottom: 1.5rem;
     }
 }
 
-// --- DARK MODE OVERRIDES ---
+// --- DARK MODE ---
 .dark-mode .contact-container {
     --contact-bg: #1a1a1d;
     --contact-title-color: #ffffff;
@@ -36,12 +36,12 @@
     font-size: 1.12rem;
     line-height: 1.6;
     margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
     // Constrain the width for better readability on large screens
     max-width: 55ch; 
 }
 
 // Styling for the Material-UI Button
-// This rule can now be a top-level rule since .contact-left was removed
 .contact-container .MuiButton-outlined { 
     background-color: var(--new-button-bg) !important;
     color: var(--new-button-text) !important;
@@ -51,13 +51,14 @@
     font-weight: 600 !important;
     text-transform: none !important;
     border: none !important;
+    margin-top: 1.5rem;
 
     &:hover {
         background-color: var(--new-button-hover-bg) !important;
     }
 }
 
-// --- RESPONSIVE ADJUSTMENTS ---
+// --- RESPONSIVE ---
 @media screen and (max-width: 768px) {
     .contact-container h1 {
         font-size: 2.2rem;
