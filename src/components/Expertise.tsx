@@ -44,8 +44,8 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>AI & Machine Learning</h3>
-                    <p>I develop and deploy end-to-end machine learning solutions, from classical models to cutting-edge deep learning, LLMs, and computer vision systems. 
-                        I focus on building robust, scalable, and production-ready AI applications tailored to business needs.</p>
+                    <p>Develop and deploy end-to-end machine learning solutions, from classical models to cutting-edge deep learning, LLMs, and computer vision systems. 
+                        Focus on building robust, scalable, and production-ready AI applications tailored to business needs.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -57,8 +57,8 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Programming & Visualisation</h3>
-                    <p>I work fluently across the data science stack using Python, SQL, and specialize in transforming 
-                        data into insights through clear and compelling visualizations. I build interactive tools that bring stakeholders closer to data.</p>
+                    <p>Work fluently across the data science stack using Python, SQL, and specialize in transforming 
+                        data into insights through clear and compelling visualizations. Build interactive tools that bring stakeholders closer to data.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -70,8 +70,8 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>Cloud & MLOps</h3>
-                    <p>I leverage modern cloud and data platforms to scale machine learning workflows and automate deployments. From data pipelines to containerization, 
-                        I ensure reliability, reproducibility, and performance.</p>
+                    <p>Leverage modern cloud and data platforms to scale machine learning workflows and automate deployments. From data pipelines to containerization, 
+                        ensure reliability, reproducibility, and performance.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
