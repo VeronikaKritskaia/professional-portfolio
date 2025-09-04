@@ -5,7 +5,7 @@ footer {
     // --footer-bg-dark: #2c2c2e; // A good contrasting dark mode background
     --footer-border-light: rgba(0, 0, 0, 0.1);
     --footer-border-dark: rgba(255, 255, 255, 0.1);
-    --footer-primary-text-light: #1a1a1a; // Darker text for titles
+    --footer-primary-text-light: #3498db; // Darker text for titles
     --footer-primary-text-dark: #ffffff;
     --footer-secondary-text-light: #5a5a5a; // Lighter text for content
     --footer-secondary-text-dark: #cccccc;
@@ -38,7 +38,7 @@ footer {
         font-size: 0.7rem;
         font-weight: 600;
         margin-bottom: 0.75rem;
-        color: var(--footer-primary-text-light);
+        color: rgb(25, 25, 25);
         text-transform: uppercase; // All caps for titles
         letter-spacing: 0.05em;
     }
@@ -50,23 +50,22 @@ footer {
         line-height: 1.5;
 
         &:hover {
-            color: var(--footer-primary-text-light);
+            color: #9444ff;
             text-decoration: underline; // Add underline on hover for links
         }
     }
 
     .social-icons {
-        display: flex;
         justify-content: center;
         gap: 15px; // Space between icons
         a {
             color: var(--footer-secondary-text-light);
             transition: color 0.2s ease;
             &:hover {
-                color: var(--footer-primary-text-light);
+                color: #9444ff;
             }
             .MuiSvgIcon-root {
-                font-size: 1.3rem; // Slightly smaller icons
+                font-size: 1.5rem; // Slightly smaller icons
             }
         }
     }
@@ -80,11 +79,11 @@ footer {
     .column-title { color: var(--footer-primary-text-dark); }
     .column-text {
         color: var(--footer-secondary-text-dark);
-        &:hover { color: var(--footer-primary-text-dark); }
+        &:hover { color: var(--footer-primary-text-light); }
     }
     .social-icons a {
         color: var(--footer-secondary-text-dark);
-        &:hover { color: var(--footer-primary-text-dark); }
+        &:hover { color: var(--footer-primary-text-light); }
     }
 }
 
