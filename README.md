@@ -4,7 +4,7 @@
 
 ## Demo
 
-View the [Demo](https://VeroikaKritskaia.github.io/professional-portfolio/).
+View the [Demo](https://veronikakritskaia.github.io/professional-portfolio/)
 
 ![screenshot](./src/assets/images/screenshot.png)
 
