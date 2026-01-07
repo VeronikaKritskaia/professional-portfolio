@@ -43,7 +43,7 @@ function Main() {
             >
               <LinkedInIcon />
             </a>
-            <a 
+            {/* <a 
               href="https://github.com/VeronikaKritskaia" // <-- TODO: Add your GitHub URL
               target="_blank" 
               rel="noopener noreferrer" 
@@ -51,7 +51,7 @@ function Main() {
               aria-label="GitHub"
             >
               <GitHubIcon />
-            </a>
+            </a> */}
           </div>
 
         </div>

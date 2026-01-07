@@ -36,6 +36,18 @@ const projectsData = [
       'Collaborated with product and business teams to translate their requirements into technical plans for the AI model(s).'
     ],
     skills: ['NLP', 'Compute Vision', 'LLM', 'OCR']
+  },
+  {
+    id: 4,
+    title: 'Cold-Start Demand Forecasting for New Products',
+    description: 'Designed a cold-start forecasting approach to estimate demand for newly launched products with little or no sales history.',
+    details: [
+      'Used time series clustering technique (HDBSCAN) and pair-wise matching technique with dtw distance to perform series-based similarity matching on historical sales behavior.',
+      'Implemented fallback matching logic to expand the search across models when no suitable match was found within the same product family.',
+      'Reconstructed synthetic sales histories for new products using scaled reference time series for smoother demand patterns.',
+      'Trained a LightGBM forecasting model across all products using enriched time series data.'
+    ],
+    skills: ['Time Series', 'LightGBM', 'HDBSCAN', 'Spark', 'Scikit-learn', 'dtw distance']
   }
 ];
 

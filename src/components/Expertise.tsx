@@ -11,7 +11,11 @@ const labelsFirst = [
     "Computer Vision",
     "MLflow",
     "API development",
-    "pytest"
+    "pytest",
+    "Scikit-learn",
+    "Forecasting",
+    "Time Series Analysis",
+    "Spark"
 ];
 
 const labelsSecond = [
@@ -23,6 +27,7 @@ const labelsSecond = [
     "Tableau",
     "Matplotlib",
     "Seaborn",
+    "Plotly",
     "Streamlit",
 ];
 

@@ -30,9 +30,9 @@ function Footer() {
         <div className="footer-column">
           <div className="column-title">Follow</div>
           <div className="social-icons">
-            <a href="https://github.com/VeronikaKritskaia" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            {/* <a href="https://github.com/VeronikaKritskaia" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <GitHubIcon />
-            </a>
+            </a> */}
             <a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <LinkedInIcon />
             </a>
