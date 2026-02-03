@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/VeronikaKritskaia/VKritskaia.github.io/static/css/main.95253951.css",
-    "main.js": "/VeronikaKritskaia/VKritskaia.github.io/static/js/main.3f5713e2.js",
-    "static/js/453.b05d8aa5.chunk.js": "/VeronikaKritskaia/VKritskaia.github.io/static/js/453.b05d8aa5.chunk.js",
-    "static/media/my_photo.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/my_photo.a8ac4d9461cdcfedb719.png",
-    "static/media/congruency.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/congruency.b839cbbc42c1cf214ee4.png",
-    "static/media/VRagents.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/VRagents.b8199c7305a09332bff6.png",
-    "static/media/bg-light.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/VeronikaKritskaia/VKritskaia.github.io/static/media/bg-dark.f420c6b8458af72de935.png",
-    "index.html": "/VeronikaKritskaia/VKritskaia.github.io/index.html",
-    "main.95253951.css.map": "/VeronikaKritskaia/VKritskaia.github.io/static/css/main.95253951.css.map",
-    "main.3f5713e2.js.map": "/VeronikaKritskaia/VKritskaia.github.io/static/js/main.3f5713e2.js.map",
-    "453.b05d8aa5.chunk.js.map": "/VeronikaKritskaia/VKritskaia.github.io/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/professional-portfolio/static/css/main.1a09a8bb.css",
+    "main.js": "/professional-portfolio/static/js/main.9085b0e0.js",
+    "static/js/453.b05d8aa5.chunk.js": "/professional-portfolio/static/js/453.b05d8aa5.chunk.js",
+    "static/media/my_photo.png": "/professional-portfolio/static/media/my_photo.a8ac4d9461cdcfedb719.png",
+    "static/media/congruency.png": "/professional-portfolio/static/media/congruency.b839cbbc42c1cf214ee4.png",
+    "static/media/VRagents.png": "/professional-portfolio/static/media/VRagents.b8199c7305a09332bff6.png",
+    "static/media/bg-light.png": "/professional-portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/professional-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "index.html": "/professional-portfolio/index.html",
+    "main.1a09a8bb.css.map": "/professional-portfolio/static/css/main.1a09a8bb.css.map",
+    "main.9085b0e0.js.map": "/professional-portfolio/static/js/main.9085b0e0.js.map",
+    "453.b05d8aa5.chunk.js.map": "/professional-portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95253951.css",
-    "static/js/main.3f5713e2.js"
+    "static/css/main.1a09a8bb.css",
+    "static/js/main.9085b0e0.js"
   ]
 }
