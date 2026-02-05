@@ -9,9 +9,10 @@ const projectsData = [
     title: 'Product Assessment with Computer Vision',
     description: 'Developed a computer vision solution to automate product quality assessment, enhancing a circular economy program.',
     details: [
-      'Scraped and labeled extensive datasets to train and fine-tune computer vision models for accurate product quality assessment.',
-      'Collaborated closely with sport experts to gather domain expertise and validate model performance.',
-      'Successfully deployed the model, streamlining the process and contributing to sustainability goals by reducing assessment time.'
+      'Built and fine-tuned multiple Detectron2 models on large labeled datasets for accurate multi-class product quality assessment, leveraging advanced augmentation for improved generalization.',
+      'Incorporated domain expertise from sports specialists to validate model performance against real-world quality criteria.',
+      'Deployed a scalable pipeline with Ray Serve on Kubernetes, enabling parallel inference and high-throughput batch processing, reducing assessment time and manual effort.',
+      'Streamlined predictions by consolidating outputs from multiple models into structured JSON, ensuring a modular and maintainable codebase.'
     ],
     skills: ['Python', 'Computer Vision', 'PyTorch', 'Docker']
   },
@@ -29,25 +30,24 @@ const projectsData = [
   {
     id: 3,
     title: 'AI-Powered Product Label Automation',
-    description: 'Created an AI-powered pipeline using LLMs and OCR to automate product label analysis.',
+    description: 'Created an AI-powered pipeline using language models and OCR to automate product label analysis.',
     details: [
-      'Fine-tuned Large Language Models (LLMs) to accurately classify unstructured product text into specific business categories, improving speed and efficiency of product onboarding.',
-      'Integrated computer vision models to precisely extract graphic symbols from product labels, enhancing the system\'s overall data accuracy.',
-      'Collaborated with product and business teams to translate their requirements into technical plans for the AI model(s).'
+      'Fine-tuned Transformer NLP models with Named Entity Recognition (NER) to classify unstructured product text into business categories, accelerating product onboarding.',
+      'Integrated computer vision pipelines (Detectron2 + OCR) to extract symbols from labels, improving data accuracy.',
+      'Translated business requirements into end-to-end AI workflows, combining NLP and CV models into scalable, production-ready solutions.'
     ],
-    skills: ['NLP', 'Compute Vision', 'LLM', 'OCR']
+    skills: ['NLP', 'Compute Vision', 'Transformers', 'OCR']
   },
   {
     id: 4,
     title: 'Cold-Start Demand Forecasting for New Products',
     description: 'Designed a cold-start forecasting approach to estimate demand for newly launched products with little or no sales history.',
     details: [
-      'Used time series clustering technique (HDBSCAN) and pair-wise matching technique with dtw distance to perform series-based similarity matching on historical sales behavior.',
-      'Implemented fallback matching logic to expand the search across models when no suitable match was found within the same product family.',
-      'Reconstructed synthetic sales histories for new products using scaled reference time series for smoother demand patterns.',
-      'Trained a LightGBM forecasting model across all products using enriched time series data.'
+      'Applied HDBSCAN clustering and DTW-based pairwise matching to identify similar historical sales patterns across 100+ departments, implementing fallback logic to extend matches across product families.',
+      'Generated synthetic sales histories for new products using scaled reference series, smoothing demand patterns for better forecasting.',
+      'Built a scalable training pipeline with Apache Spark, enabling efficient LightGBM model training on enriched time series data and optimizing performance across hundreds of products.',
     ],
-    skills: ['Time Series', 'LightGBM', 'HDBSCAN', 'Spark', 'Scikit-learn', 'dtw distance']
+    skills: ['Time Series', 'LightGBM', 'HDBSCAN', 'Spark', 'mlforecast', 'dtw distance']
   }
 ];
 
